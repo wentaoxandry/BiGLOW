@@ -11,5 +11,9 @@ You can download the trained unimodal models [here](https://drive.google.com/dri
         
    b. ***Run experiment***:
       - execute `Fakeddit_exp/run.sh`
-3. **Audio and Video trained models**: 
-   - Move downloaded `audio.pkl` and `video.pkl` files to the `TAU_exp/unimodal_models` directory.
+2. **TAU experiment**:
+   a. ***Audio and Video trained models***:
+      - Move downloaded `audio.pkl` and `video.pkl` files to the `TAU_exp/unimodal_models` directory.
+        
+   b. ***Run experiment***:
+      - execute `TAU_exp/run.sh`
