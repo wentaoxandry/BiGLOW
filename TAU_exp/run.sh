@@ -148,7 +148,7 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
       echo "Maximum model trained"
     else
     	type=MGL
-      	python3 local/multimodal/pairwisefusion/pairwisefusion_maximul_likelihood.py 	\
+      	python3 local/multimodal/pairwisefusion/maximum_gaussian_likelihood.py 	\
     		--datasdir $Datasetdir 		\
     		--modal $type					\
     		--videomodal video			\
