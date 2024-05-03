@@ -247,10 +247,10 @@ if __name__ == '__main__':
             try:
                 savedict.update({filename: {}})
                 savedict[filename].update({'audioprob': _get_from_loader(
-                    filepath=audioprob[filename].replace('./', './../../../'), filetype='mat')})
+                    filepath=audioprob[filename], filetype='mat')})
                 savedict[filename].update({'videoprob': _get_from_loader(
-                    filepath=videoprob[filename].replace('./', './../../../'), filetype='mat')})
-                labeldata = _get_from_loader(filepath=label[filename].replace('./', './../../../'), filetype='mat')
+                    filepath=videoprob[filename], filetype='mat')})
+                labeldata = _get_from_loader(filepath=label[filename], filetype='mat')
                 if dset == 'test':
                     prior[labeldata[0][0]].append(filename)
                 savedict[filename].update(

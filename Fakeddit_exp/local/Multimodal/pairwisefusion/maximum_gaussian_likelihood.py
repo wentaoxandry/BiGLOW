@@ -248,11 +248,11 @@ if __name__ == '__main__':
             try:
                 savedict.update({filename: {}})
                 savedict[filename].update({'imageprob': _get_from_loader(
-                    filepath=imageprob[filename].replace('./', './../../../'), filetype='mat')}) 
+                    filepath=imageprob[filename], filetype='mat')}) 
                 savedict[filename].update({'textprob': _get_from_loader(
-                    filepath=textprob[filename].replace('./', './../../../'),
+                    filepath=textprob[filename],
                     filetype='mat')}) 
-                labeldata = _get_from_loader(filepath=label[filename].replace('./', './../../../'), filetype='mat')
+                labeldata = _get_from_loader(filepath=label[filename], filetype='mat')
 
                 if dset == 'train':
                     prior[labeldata[0][0]].append(filename)
